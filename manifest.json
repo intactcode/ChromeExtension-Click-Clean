@@ -1,0 +1,36 @@
+{
+   "author": "BrowserNative",
+   "background": {
+      "persistent": false,
+      "scripts": [ "js/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "files/icon-128.png",
+      "default_title": "Click and Clean"
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "suggested_key": {
+            "default": "Ctrl+Shift+E"
+         }
+      }
+   },
+   "description": "Quickly delete your browsing data - open windows, browsing history, cookies, downloads history, form data, caches etc.",
+   "homepage_url": "https://browsernative.com/click-and-clean-chrome-extension/",
+   "icons": {
+      "128": "files/icon-128.png",
+      "48": "files/icon-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl3LkogoFOCyd8Q8D8k3IBZG6wAdmOlxFdawy7S6EjhnNTsJKRqsugP94wteDqBc6XTC03ekyhvCqHRcvODo+tjTktYaOsNnay6+Hv4v9/6wJA0HBuyMoL93r0jmQr8RQX2DviJsPkZvJ+UR2UcnsutzHBeMfYtXRRZqjNVSJYLkP6aGwB/SWOYapfL77s5Ypl/A268DJuHW93r0O98T5GEibl4xBkXGK3MySkqchBLYOpJ18DEdlbfES0dn+tkTiX8NgtBltxQc0kqHcq0WehLLmYiGmN8L9yNDJRixbzNcMn9QlE6IA8zjEoqKh6gEOeNrINqZEwucnm8dRSbV0rwIDAQAB",
+   "manifest_version": 2,
+   "name": "Click and Clean",
+   "options_ui": {
+      "chrome_style": true,
+      "open_in_tab": true,
+      "page": "options.html"
+   },
+   "permissions": [ "browsingData", "tabs", "notifications" ],
+   "short_name": "ClickClean",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.4"
+}
