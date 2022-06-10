@@ -24,9 +24,13 @@ async function clean() {
   let whitelist = await LS.get("whitelist").then(function (result) {
     return result.whitelist;
   });
-
+ if (whitelist) {
   removeTabs = whitelist.includes("tabs") ? true : false;
-//   if (whitelist) whitelist = whitelist.split(",");
+ } else {
+  removeTabs = false;
+  whitelist=[];
+ }
+  //   if (whitelist) whitelist = whitelist.split(",");
 //   else whitelist = [""];
 
   let dataTypes = [
